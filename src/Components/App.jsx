@@ -4,6 +4,7 @@ import FeatureSection from "../page-sections/features-section";
 // import Testimonials from "../Components/Testimonials";
 import HowToApply from "../page-sections/how-to-apply";
 import ToolsSection from "../page-sections/tools";
+import Footer from "../page-sections/footer";
 
 // Main js file
 function App() {
@@ -15,6 +16,7 @@ function App() {
             {/* <Testimonials /> */}
             <HowToApply />
             <ToolsSection />
+            <Footer />
             
         </>
     );
