@@ -58,41 +58,47 @@ export default function ToolsSection() {
     ];
 
     return (
-        <section className="h-screen pl-15 pr-15 font-ibm mt-100">
-            <div className='bg-white py-10 px-5 rounded-4xl flex flex-col gap-20 items-center justify-between'>
-                <div>
-                    <h1 className='font-mono font-bold text-5xl text-center'>Streamline <span className='text-green-500 underline'>operations</span> with our tools</h1>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {toolsData.map(({ id, title, subtitle, points, buttonText, image }) => (
-                        <div
-                            key={id}
-                            className="bg-xtra shadow-md rounded-3xl p-8 flex flex-col gap-5 cursor-pointer">
-                            <div className="flex items-center gap-4">
-                                <img src={image} alt={title} className="w-12 h-12 object-contain" />
-                                <div>
-                                    <h2 className="font-mono font-bold text-xl">{title}</h2>
-                                    <p className="text-accent opacity-80">{subtitle}</p>
-                                </div>
-                            </div>
+        <section className="w-full font-ibm px-4 sm:px-6 md:px-10 lg:px-20 mb-20">
+            <div className='bg-white py-12 px-5 md:px-10 rounded-4xl flex flex-col gap-12 items-center'>
 
-                            <div className="flex flex-col gap-3 mt-4">
-                                {points.map((point, index) => (
-                                    <div key={index} className="flex items-center gap-3">
-                                        <CheckCircle className="text-green-500 w-5 h-5" />
-                                        <p className="text-sm text-gray-700">{point}</p>
+                <h1 className='font-mono font-bold text-3xl md:text-5xl text-center'>
+                    Streamline <span className='text-green-500 underline'>operations</span> with our tools
+                </h1>
+
+                {/* Scrollable and snapping cards on mobile */}
+                <div className="w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide md:overflow-visible">
+                    <div className="flex md:grid md:grid-cols-2 gap-6">
+                        {toolsData.map(({ id, title, subtitle, points, buttonText, image }) => (
+                            <div
+                                key={id}
+                                className="min-w-[300px] md:min-w-0 snap-start bg-xtra shadow-md rounded-3xl p-6 flex flex-col gap-5 cursor-pointer">
+
+                                <div className="flex items-center gap-4">
+                                    <img src={image} alt={title} className="w-12 h-12 object-contain" />
+                                    <div>
+                                        <h2 className="font-mono font-bold text-xl">{title}</h2>
+                                        <p className="text-accent opacity-80">{subtitle}</p>
                                     </div>
-                                ))}
-                            </div>
+                                </div>
 
-                            <button className="mt-6 w-fit flex items-center gap-2 border border-green-500 text-green-600 font-bold py-2 px-4 rounded-lg hover:bg-green-50 transition-colors">
-                                {buttonText} →
-                            </button>
-                        </div>
-                    ))}
+                                <div className="flex flex-col gap-3 mt-4">
+                                    {points.map((point, index) => (
+                                        <div key={index} className="flex items-center gap-3">
+                                            <CheckCircle className="text-green-500 w-5 h-5" />
+                                            <p className="text-sm text-gray-700">{point}</p>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <button className="mt-6 w-fit flex items-center gap-2 border border-green-500 text-green-600 font-bold py-2 px-4 rounded-lg hover:bg-green-50 transition-colors">
+                                    {buttonText} →
+                                </button>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
-    )
 
+    );
 }
