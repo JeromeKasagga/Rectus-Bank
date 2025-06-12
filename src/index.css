@@ -1,45 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-body{
+body {
   background-color: rgb(247, 248, 251);
 }
 
 /* Utilities */
-
-  @layer utilities {
-    /* colors */
-    .bg-primary{
-      background-color: #09182d;
-    }
-
-    .bg-secondary{
-      background-color: #00e382;
-
-    }
-    .bg-xtra{
-      background-color: rgb(247, 248, 251);
-    }
-
-    .text-primary{
-      color: #c3cfd9;
-    }
-    .text-secondary{
-      color: #00e382;
-    }
-    .text-accent{
-      color: #09182d ;
-    }
-    .border-color{
-      border-color: #00e382;
-    }
-
-    /* Fonts */
-    .font-mona {
-      font-family: 'Mona Sans', sans-serif;
-    }
-    .font-ibm {
-      font-family: 'IBM Plex Sans', sans-serif;
-    }
-    
+@layer utilities {
+  /* Original color scheme */
+  .bg-primary {
+    background-color: #09182d;
   }
+  .bg-secondary {
+    background-color: #00e382;
+  }
+  .bg-xtra {
+    background-color: rgb(247, 248, 251);
+  }
+  .text-primary {
+    color: #c3cfd9;
+  }
+  .text-secondary {
+    color: #00e382;
+  }
+  .text-accent {
+    color: #09182d;
+  }
+  .border-color {
+    border-color: #00e382;
+  }
+
+  /* Fonts */
+  .font-mona {
+    font-family: 'Mona Sans', sans-serif;
+  }
+  .font-ibm {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+  /* Custom shadows */
+  .shadow-testimonial {
+    box-shadow: 0 10px 25px -5px rgba(0, 227, 130, 0.3);
+  }
+}
+
+/* Hide scrollbar for all browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
