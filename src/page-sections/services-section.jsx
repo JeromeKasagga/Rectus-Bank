@@ -4,23 +4,19 @@ import img1 from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/Rea
 import img2 from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/loan-man-img2.jpg';
 import img3 from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/man-typing-on-laptop.jpg';
 
-
-// Tab Header Component
 function TabHeader({ label, isActive, onClick }) {
     return (
         <button
             onClick={onClick}
-            className={`px-9 py-5 rounded-2xl font-mono font-semibold text-xl shadow-sm cursor-pointer ${isActive ? 'bg-secondary text-white shadow-lg' : 'bg-gray-50 text-gray-800'
-                }`}>
+            className={`px-6 py-4 md:px-9 md:py-5 rounded-2xl font-mono font-semibold text-lg md:text-xl shadow-sm cursor-pointer transition-colors ${
+                isActive ? 'bg-secondary text-white shadow-lg' : 'bg-gray-50 text-gray-800'
+            }`}>
             {label}
-        </button >
-    )
-
+        </button>
+    );
 }
 
-// Services section
 function ServicesSection() {
-    // Tab labels/Titles
     const tabLabels = [
         { key: "lineOfCredit", label: "Business Line of Credit" },
         { key: "EquipmentFinancing", label: "Equipment Financing" },
@@ -60,22 +56,24 @@ function ServicesSection() {
             benefit3: "Real-time analytics and sales tracking",
             imgUrl: img3
         }
-
     ];
 
     const activeService = services.find(service => service.key === activeTab);
 
-
-
     return (
-        <section className="h-screen pl-15 pr-15 font-ibm">
-            <div className="w-290 flex flex-col gap-10 justify-items-center items-center mt-15">
-                <div className="flex flex-col gap-5 justify-between justify-items-center items-center">
-                    <h1 className="text-5xl font-mona font-semibold">Financial Freedom with <span className="text-secondary underline">Rectus</span></h1>
-                    <p className="text-accent opacity-75">Our offerrings are tailored to meet the unique needs and challenges of each business, and are <br /> designed to provide the funding and support necessary to help businesses reach their full potential.</p>
+        <section className="min-h-screen px-4 md:px-15 py-20 font-ibm">
+            <div className="w-full max-w-7xl mx-auto flex flex-col gap-10 items-center">
+                <div className="flex flex-col gap-5 items-center text-center">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-mona font-semibold">
+                        Financial Freedom with <span className="text-secondary underline">Rectus</span>
+                    </h1>
+                    <p className="text-accent opacity-75 max-w-3xl">
+                        Our offerrings are tailored to meet the unique needs and challenges of each business, and are designed to provide the funding and support necessary to help businesses reach their full potential.
+                    </p>
                 </div>
-                <div>
-                    <div className='flex flex-row justify-between'>
+                
+                <div className="w-full">
+                    <div className="flex overflow-x-auto gap-4 mb-6 md:flex-row no-scrollbar">
                         {tabLabels.map(tab => (
                             <TabHeader
                                 key={tab.key}
@@ -86,36 +84,36 @@ function ServicesSection() {
                         ))}
                     </div>
 
-                    <div>
-                        {activeService && (
-                            <div key={activeService.key} className='flex gap-20 items-center justify-between w-full rounded-md mt-7'>
-                                <div className=' h-100 p-10 pb-15 mt-0 w-1/2 bg-white shadow-lg rounded-[45px] flex flex-col justify-between'>
-                                    <h1 className='font-mono font-semibold text-2xl'>{activeService.title}</h1>
-                                    <p className=' text-sm text-accent opacity-75 leading-5'>{activeService.description}</p>
-                                    <div>
-                                        <h3 className='font-mono font-semibold text-md'>{activeService.subtitle1}</h3>
-                                        <ul>
-                                            <li>{activeService.benefit1}</li>
-                                            <li>{activeService.benefit2}</li>
-                                            <li>{activeService.benefit3}</li>
-                                        </ul>
-                                    </div>
+                    {activeService && (
+                        <div className='flex flex-col lg:flex-row gap-8 items-center justify-between w-full rounded-md mt-7'>
+                            <div className='w-full lg:w-1/2 bg-white p-6 md:p-10 shadow-lg rounded-3xl flex flex-col gap-6'>
+                                <h1 className='font-mono font-semibold text-2xl'>{activeService.title}</h1>
+                                <p className='text-sm text-accent opacity-75 leading-5'>{activeService.description}</p>
+                                <div>
+                                    <h3 className='font-mono font-semibold text-md'>{activeService.subtitle1}</h3>
+                                    <ul className="list-disc pl-5 space-y-2 mt-2">
+                                        <li>{activeService.benefit1}</li>
+                                        <li>{activeService.benefit2}</li>
+                                        <li>{activeService.benefit3}</li>
+                                    </ul>
+                                </div>
+                                <div className="mt-4">
                                     <ApplyButton />
                                 </div>
-                                <div className='w-1/2'>
-                                    <img src={activeService.imgUrl} alt="service image" srcset="" className='h-100 rounded-[45px] shadow-xs' />
-                                </div>
                             </div>
-                        )}
-                    </div>
-                    
+                            <div className='w-full lg:w-1/2'>
+                                <img 
+                                    src={activeService.imgUrl} 
+                                    alt={activeService.title} 
+                                    className='w-full h-auto max-h-[400px] lg:max-h-[500px] rounded-3xl shadow-md object-cover'
+                                />
+                            </div>
+                        </div>
+                    )}
                 </div>
-                
             </div>
-         
-            
         </section>
-    )
+    );
 }
 
 export default ServicesSection;
