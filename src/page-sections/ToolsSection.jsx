@@ -64,7 +64,7 @@ export default function ToolsSection() {
                 <h1 className='font-mono font-bold text-3xl md:text-5xl text-center'>
                     Streamline <span className='text-green-500 underline'>operations</span> with our tools
                 </h1>
-
+                
                 {/* Scrollable and snapping cards on mobile */}
                 <div className="w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide md:overflow-visible">
                     <div className="flex md:grid md:grid-cols-2 gap-6">

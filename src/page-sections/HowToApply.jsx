@@ -24,7 +24,7 @@ export default function HowToApply() {
                         <Qualifications info="$100k in revenue" />
                     </div>
                 </div>
-
+                
                 <div className="flex flex-col gap-10 mt-12 md:mt-20">
                     <div>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-mono font-bold">
