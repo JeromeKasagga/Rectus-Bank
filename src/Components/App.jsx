@@ -1,25 +1,23 @@
-import Hero from "/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/page-sections/Hero.jsx";
-import ServicesSection from "/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/page-sections/services-section.jsx";
-import FeatureSection from "../page-sections/features-section";
-// import Testimonials from "../Components/Testimonials";
-import HowToApply from "../page-sections/how-to-apply";
-import ToolsSection from "../page-sections/tools";
-import Footer from "../page-sections/footer";
+import Hero from "../page-sections/Hero";
+import ServicesSection from "../page-sections/ServicesSection";
+import FeatureSection from "../page-sections/FeatureSection";
+import HowToApply from "../page-sections/HowToApply";
+import ToolsSection from "../page-sections/ToolsSection";
+import Footer from "../page-sections/Footer";
 
-// Main js file
 function App() {
-    return (
-        <>
-            <Hero />
-            <ServicesSection />
-            <FeatureSection />
-            {/* <Testimonials /> */}
-            <HowToApply />
-            <ToolsSection />
-            <Footer />
-            
-        </>
-    );
+  return (
+    <>
+      <Hero />
+      <ServicesSection />
+      <div className="mt-[-1rem] md:mt-[-2rem] lg:mt-[-4rem] xl:mt-[-5rem]">
+        <FeatureSection />
+      </div>
+      <HowToApply />
+      <ToolsSection />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

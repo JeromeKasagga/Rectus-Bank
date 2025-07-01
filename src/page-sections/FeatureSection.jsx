@@ -13,7 +13,7 @@ function CardInfo({ title, details, containerClass }) {
 // --------------- Main App / Section ----------------
 export default function FeatureSection() {
     return (
-        <section className="min-h-screen px-4 sm:px-6 md:px-12 lg:px-20 font-ibm flex flex-col items-center">
+        <section className="min-h-screen md:min-h-[80vh] lg:min-h-[70vh]  px-4 sm:px-5 md:px-8 lg:px-12 font-ibm flex flex-col items-center justify-center">
             <div className="w-full max-w-7xl py-16 bg-white rounded-4xl">
                 <h2 className='text-3xl md:text-4xl font-bold font-mono mb-6 md:mb-10 lg:mb-14 text-center px-4'>
                     Empower Your Business with <br />

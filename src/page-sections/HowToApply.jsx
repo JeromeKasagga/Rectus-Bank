@@ -12,7 +12,7 @@ function Qualifications({ info }) {
 
 export default function HowToApply() {
     return (
-        <section className="min-h-screen px-4 md:px-15 py-20 font-ibm">
+        <section className="min-h-screen px-4 md:px-15 py-12 md:py-16 font-ibm">
             <div className='max-w-7xl mx-auto'>
                 <div className='bg-white py-8 md:py-10 px-6 md:px-10 rounded-3xl md:rounded-4xl flex flex-col gap-8'>
                     <p className='font-mono font-bold text-3xl md:text-4xl'>Do I <span className='text-secondary underline'>Qualify?</span></p>
@@ -25,7 +25,7 @@ export default function HowToApply() {
                     </div>
                 </div>
                 
-                <div className="flex flex-col gap-10 mt-12 md:mt-20">
+                <div className="flex flex-col gap-8 mt-10 md:mt-16">
                     <div>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-mono font-bold">
                             Three <span className="text-secondary underline">Steps</span> to Funding Your Future

@@ -1,5 +1,5 @@
 import ApplyButton from "../Components/ApplyButton";
-import img1 from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/hero-lady-img1.jpg';
+import img1 from '../assets/Images/hero-lady-img1.jpg';
 
 export default function Footer() {
     return (

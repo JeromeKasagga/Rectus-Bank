@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import rectusLogo from "/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/rectus-logo.png";
+import rectusLogo from "../assets/Images/rectus-logo.png";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);

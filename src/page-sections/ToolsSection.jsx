@@ -1,8 +1,8 @@
 // tools section
-import calculator from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/calculator-img.png';
-import odometer from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/odometer-img.png';
-import seesaw from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/seesaw.png';
-import bankAccount from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/seesaw.png';
+import calculator from '../assets/Images/calculator-img.png';
+import odometer from '../assets/Images/odometer-img.png';
+import seesaw from '../assets/Images/seesaw.png';
+import bankAccount from '../assets/Images/bank-account.png';
 import { CheckCircle } from "lucide-react";
 
 export default function ToolsSection() {

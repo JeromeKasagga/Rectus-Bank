@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import ApplyButton from '../Components/ApplyButton';
-import img1 from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/loan=man-img1.jpg';
-import img2 from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/loan-man-img2.jpg';
-import img3 from '/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/man-typing-on-laptop.jpg';
+import img1 from '../assets/Images/hero-lady-img1.jpg';
+import img2 from '../assets/Images/loan-man-img2.jpg';
+import img3 from '../assets/Images/man-typing-on-laptop.jpg';
 
 function TabHeader({ label, isActive, onClick }) {
     return (

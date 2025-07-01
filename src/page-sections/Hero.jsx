@@ -1,6 +1,6 @@
 import NavBar from "../Components/NavBar";
 import ApplyButton from "../Components/ApplyButton";
-import heroImg from "/Users/JeromeMikaelson/Documents/PROGRAMMING/REACT LESSONS/React Projects/Rectus-Bank/src/assets/Images/testimonial-3-removebg-preview.png";
+import heroImg from "../assets/Images/testimonial-3-removebg-preview.png";
 import { ArrowRight } from 'lucide-react';
 
 function Hero() {
