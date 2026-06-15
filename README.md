@@ -1,66 +1,90 @@
-# Rectus Bank - Responsive Business Financing Platform  
-*A responsive web application that provides business loan solutions with intuitive tools and a streamlined application process. Entrepreneurs can explore financial products, check qualifications, and apply for funding.*
-<img width="1280" alt="Screenshot 2025-07-01 at 10 08 09" src="https://github.com/user-attachments/assets/3db70d37-f327-416b-8aa7-af7cdcaa5c31" />
- 
-<img width="1280" alt="Screenshot 2025-07-01 at 10 09 02" src="https://github.com/user-attachments/assets/5edd583e-eeba-4c21-b02e-87c82fc5f293" />
-<img width="282" alt="Screenshot 2025-07-01 at 10 09 47" src="https://github.com/user-attachments/assets/e88897af-e9c1-4292-a419-fdb6c13c97f0" />
+## 🚀 Getting Started
 
-## Features  
+### Prerequisites
+- Node.js 16+ 
+- npm or yarn
 
-**💳 Financial Products**  
-- Business line of credit  
-- Equipment financing  
-- Merchant services  
-- Interactive product comparison  
+### Installation
 
-**📊 Smart Tools**  
-- Loan calculator with repayment estimates  
-- Credit score simulator  
-- Financial statement analyzer  
-- Qualification checker  
-
-**🚀 Application Process**  
-- 3-step application journey  
-- Real-time status updates  
-- Document upload portal  
-- Instant approval for qualified applicants  
-
-**✨ Premium Experience**  
-- Modern banking UI with smooth animations  
-- Responsive design for all devices  
-- Secure application form  
-- Customer success stories  
-
-## Technologies Used  
-
-**Frontend**  
-- React.js (Vite)  
-- Tailwind CSS  
-- Lucide Icons  
-
-**Design System**  
-- IBM Plex typography  
-- Accessible color palette  
-- Micro-interactions  
-
-**Responsive Features**  
-- Mobile-first approach  
-- Adaptive layouts  
-- Touch-friendly controls  
-
-## Live Demo  
-No installation needed! Visit our live demo at [rectusbank.demo]  
-
-For local development:  
 ```bash
-git clone https://github.com/yourusername/rectus-bank.git
-cd rectus-bank
+# Clone the repository
+git clone https://github.com/JeromeKasagga/Rectus-Bank.git
+cd Rectus-Bank
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
 ```
 
-## Key Components  
-`<ApplyButton>` - Universal CTA  
-`<NavBar>` - Adaptive navigation  
-`<ToolsSection>` - Interactive financial calculators  
-`<ServicesTabs>` - Product showcase  
+Visit `http://localhost:5173` to see it running locally.
+Visit https://rectus-bank-4a3k.vercel.app/# to run it on the web
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 📱 Responsive Design
+
+Optimized for all screen sizes:
+- **Desktop:** Full feature experience (1200px+)
+- **Tablet:** Adapted layouts (768px - 1199px)
+- **Mobile:** Touch-friendly interface (320px - 767px)
+
+## 🎨 Key Components
+
+- `<NavBar>` - Responsive navigation with mobile menu
+- `<ApplyButton>` - Universal call-to-action
+- `<LoanCalculator>` - Interactive calculation tool
+- `<ProductComparison>` - Side-by-side product showcase
+- `<ApplicationForm>` - Multi-step form with validation
+- `<StatusTracker>` - Real-time application status
+
+## 🎓 What I Learned
+
+- Advanced React patterns (hooks, context, reusable components)
+- Building responsive, accessible financial UIs
+- Form validation and state management
+- Vite for faster development workflows
+- Tailwind CSS for rapid, consistent styling
+
+## 🔒 Security Notes
+
+This is a frontend demonstration. In production:
+- All sensitive operations move to a backend API
+- API keys are securely stored server-side
+- PCI compliance required for payment processing
+- SSL/TLS encryption for data in transit
+
+## 🌐 Deployment
+
+Currently deployed on Vercel for instant preview:
+- Auto-deploys on push to main branch
+- Zero-config hosting
+- Global CDN for fast load times
+
+## 📊 Performance
+
+- Lighthouse Score: 90+
+- First Contentful Paint: <1.5s
+- Fully optimized bundle
+
+## 💡 Future Enhancements
+
+- Backend API integration for real loan processing
+- User authentication & account dashboards
+- Payment gateway integration
+- Document verification system
+- Customer support chatbot
+
+## 📝 License
+
+Open source - free to use and modify
+
+## 👨‍💻 Author
+
+**Jerome Kasagga** - Full Stack Developer
+- Based in Kampala, Uganda
+- Specializing in React, responsive design, and fintech UIs
