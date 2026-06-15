@@ -31,9 +31,13 @@ function NavBar() {
     <nav className={`fixed w-full top-0 left-0 z-50 transition-all ${scrolled ? 'bg-primary/90 backdrop-blur-sm py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-15">
         <div className="flex justify-between items-center">
-            {/* Logo - unchanged from original */}
-          <div className="flex items-center">
-            <img src={rectusLogo} alt="Rectus Bank Logo" className='h-auto w-32 object-contain' />
+            {/* Logo - with inline styles to force aspect ratio */}
+          <div className="flex items-center shrink-0">
+            <img 
+              src={rectusLogo} 
+              alt="Rectus Bank Logo" 
+              style={{ width: '160px', height: 'auto', objectFit: 'contain', flexShrink: 0 }} 
+            />
           </div>
 
           {/* Desktop Navigation - unchanged layout */}
