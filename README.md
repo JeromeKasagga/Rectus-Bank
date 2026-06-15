@@ -88,3 +88,12 @@ Open source - free to use and modify
 **Jerome Kasagga** - Full Stack Developer
 - Based in Kampala, Uganda
 - Specializing in React, responsive design, and fintech UIs
+
+
+<img width="1434" height="810" alt="Screenshot 2026-06-15 at 18 03 54" src="https://github.com/user-attachments/assets/a11c02b7-76e1-4e0b-b2a7-9c37976b8556" />
+<img width="1434" height="810" alt="Screenshot 2026-06-15 at 18 03 51" src="https://github.com/user-attachments/assets/3df0b09e-72f8-4a52-89e5-c84448ce999c" />
+<img width="1434" height="810" alt="Screenshot 2026-06-15 at 18 03 43" src="https://github.com/user-attachments/assets/199165f0-fbab-48e8-aa2e-72433c40dc15" />
+<img width="1434" height="810" alt="Screenshot 2026-06-15 at 18 03 39" src="https://github.com/user-attachments/assets/871c63d1-bffa-41b0-b69f-6c0589f2d372" />
+<img width="1434" height="810" alt="Screenshot 2026-06-15 at 18 03 14" src="https://github.com/user-attachments/assets/2bd5ba95-c6b4-4462-8d99-4e5c41f718cf" />
+<img width="1434" height="810" alt="Screenshot 2026-06-15 at 18 02 55" src="https://github.com/user-attachments/assets/cddcaff4-f323-4576-92fa-5921669eae33" />
+<img width="1434" height="810" alt="Screenshot 2026-06-15 at 18 02 46" src="https://github.com/user-attachments/assets/3a4b24fd-0466-45f1-b5f8-2641ccb1d92e" />
